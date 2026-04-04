@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ My C++ WebServer ✨</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        /* 渐变动态背景 */
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* 背景动画 */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 主卡片 */
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* 卡片浮动动画 */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 42px;
+            color: #333;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        /* 标签样式 */
+        .tag {
+            display: inline-block;
+            background: #4ecdc4;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            margin: 8px;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(78, 205, 196, 0.3);
+        }
+
+        /* 描述文字 */
+        .desc {
+            font-size: 18px;
+            color: #666;
+            margin: 30px 0;
+            line-height: 1.8;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(255, 107, 107, 0.4);
+        }
+
+        /* 图标 */
+        .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">🚀</div>
+        <h1>C++ WebServer 运行成功</h1>
+        
+        <div class="tag">Linux</div>
+        <div class="tag">TCP Socket</div>
+        <div class="tag">HTTP 解析</div>
+        <div class="tag">文件读取</div>
+
+        <p class="desc">
+            本地地址：127.0.0.1:6060<br>
+            已实现：HTTP 请求解析 | 本地 HTML 加载 | 静态网页服务
+        </p>
+
+        <button class="btn" onclick="showMsg()">🎉 点击庆祝</button>
+    </div>
+
+    <script>
+        // 简单JS交互
+        function showMsg() {
+            alert("✅ 恭喜！你的 C++ WebServer 项目完美运行！\n🚀 继续学习 HTTPS / epoll 吧！");
+        }
+    </script>
+</body>
+</html>
