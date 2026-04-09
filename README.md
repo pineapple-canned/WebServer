@@ -13,7 +13,7 @@ My Simple C++ project WebServer
 &ensp;&ensp;&ensp;   采用简单的多进程实现服务器端，同样监听本地指定端口 8080
 
 - Version3.0 :
-&ensp;&ensp;&ensp;   多线程服务端，监听本地指定端口
+&ensp;&ensp;&ensp;   简单的多线程服务端，监听本地指定端口 8080
 
 
 

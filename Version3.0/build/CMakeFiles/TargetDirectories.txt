@@ -1,0 +1,3 @@
+/home/lfj/my_workspace/WebServer/Version3.0/build/CMakeFiles/server.dir
+/home/lfj/my_workspace/WebServer/Version3.0/build/CMakeFiles/edit_cache.dir
+/home/lfj/my_workspace/WebServer/Version3.0/build/CMakeFiles/rebuild_cache.dir
